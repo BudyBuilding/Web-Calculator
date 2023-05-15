@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+  <div class="calculator">
+    <div class="calculator-header">
+      <h2>Calculator</h2>
+      <div class="theme-buttons">
+        <button id="theme1" onclick="changeTheme('theme1')">Theme 1</button>
+        <button id="theme2" onclick="changeTheme('theme2')">Theme 2</button>
+        <button id="theme3" onclick="changeTheme('theme3')">Theme 3</button>  
+        <button id="theme4" onclick="changeTheme('theme4')">Theme 4</button>
+      </div>
+    </div>
+
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button class="btn operator-btn" onclick="convertFromDecToHex()">Dec to Hex</button>
+      <button class="btn operator-btn" onclick="convertFromHexToDec()">Hex to Dec</button>
+      <button class="btn operator-btn" onclick="convertFromDecToBin()">Dec to Bin</button>
+      <button class="btn operator-btn" onclick="convertFromBinToDec()">Bin to Dec</button>
+      <button class="btn operator-btn" onclick="convertFromBinToHex()">Bin to Hex</button>
+      <button class="btn operator-btn" onclick="convertFromHexToBin()">Hex to Bin</button>
+  
+      <button class="btn operator-btn" onclick="appendToMemory()">M+</button>
+      <button class="btn operator-btn" onclick="retrieveMemory()">MR</button>
+      <button class="btn operator-btn" onclick="clearDisplay()">C</button>
+      <button class="btn operator-btn" onclick="deleteLastCharacter()">&#9003;</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('%')">%</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('/')">/</button>
+      <button class="btn number-btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn number-btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn number-btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('*')">*</button>
+      <button class="btn number-btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn number-btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn number-btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('-')">-</button>
+      <button class="btn number-btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn number-btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn number-btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('+')">+</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn number-btn" onclick="appendToDisplay('0')">0</button>
+      <button class="btn operator-btn" onclick="appendToDisplay('^')">^</button>
+      <button class="btn operator-btn" onclick="calculate()">=</button>
+      <button class="btn operator-btn" onclick="calculateRoot()">√</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
